@@ -1,9 +1,9 @@
-package com.example.gettingspringsecurity.entity;
+package com.example.doctorAppTest.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 
-@Data
+//@Data
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor

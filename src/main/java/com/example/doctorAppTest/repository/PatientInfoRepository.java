@@ -1,14 +1,11 @@
-package com.example.gettingspringsecurity.repository;
+package com.example.doctorAppTest.repository;
 
-import com.example.gettingspringsecurity.entity.Patient;
-import jakarta.persistence.Id;
+import com.example.doctorAppTest.entity.Patient;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
-import java.util.Optional;
 
 public interface PatientInfoRepository extends JpaRepository<Patient,Long> {
     //Optional<Patient> findByName(String username);

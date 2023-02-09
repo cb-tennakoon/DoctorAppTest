@@ -1,17 +1,13 @@
-package com.example.gettingspringsecurity.controller;
+package com.example.doctorAppTest.controller;
 
-import com.example.gettingspringsecurity.entity.Patient;
-import com.example.gettingspringsecurity.repository.PatientInfoRepository;
+import com.example.doctorAppTest.repository.PatientInfoRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-
-import java.util.List;
-import java.util.Optional;
 
 @Controller
 public class LoginController {
 
-    private PatientInfoRepository patientInfoRepository;
+    //private PatientInfoRepository patientInfoRepository;
     @GetMapping("/login")
     String login(){
         return "login";

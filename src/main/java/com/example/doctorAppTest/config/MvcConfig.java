@@ -1,4 +1,4 @@
-package com.example.gettingspringsecurity.config;
+package com.example.doctorAppTest.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;

@@ -1,8 +1,8 @@
-package com.example.gettingspringsecurity.controller;
+package com.example.doctorAppTest.controller;
 
-import com.example.gettingspringsecurity.entity.Patient;
-import com.example.gettingspringsecurity.repository.PatientInfoRepository;
-import com.example.gettingspringsecurity.service.PatientService;
+import com.example.doctorAppTest.entity.Patient;
+import com.example.doctorAppTest.repository.PatientInfoRepository;
+import com.example.doctorAppTest.service.PatientService;
 import org.springframework.data.repository.query.Param;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-public class ProductController {
+public class PatientController {
 
-    private PatientInfoRepository patientInfoRepository;
+    private final PatientInfoRepository patientInfoRepository;
 
 //    @PostMapping("/home")
 //    public String addNewPatient(@RequestBody Patient patient){
@@ -23,7 +23,7 @@ public class ProductController {
 //        return "add new user";
 //    }
 
-    private PatientService patientService;
+    private final PatientService patientService;
 
 //    @GetMapping("/")
 //    public String viewHomePage(Model model, @Param("keyword") String keyword) {
@@ -54,7 +54,7 @@ public class ProductController {
     }
     //private final PatientService patientService;
 
-    public ProductController(PatientInfoRepository patientInfoRepository,PatientService patientService){
+    public PatientController(PatientInfoRepository patientInfoRepository, PatientService patientService){
         super();
         this.patientInfoRepository = patientInfoRepository;
         this.patientService = patientService;

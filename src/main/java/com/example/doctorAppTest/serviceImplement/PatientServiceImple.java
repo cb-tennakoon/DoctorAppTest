@@ -1,8 +1,8 @@
-package com.example.gettingspringsecurity.serviceImplement;
+package com.example.doctorAppTest.serviceImplement;
 
-import com.example.gettingspringsecurity.entity.Patient;
-import com.example.gettingspringsecurity.repository.PatientInfoRepository;
-import com.example.gettingspringsecurity.service.PatientService;
+import com.example.doctorAppTest.entity.Patient;
+import com.example.doctorAppTest.repository.PatientInfoRepository;
+import com.example.doctorAppTest.service.PatientService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

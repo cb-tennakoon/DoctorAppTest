@@ -1,6 +1,6 @@
-package com.example.gettingspringsecurity.service;
+package com.example.doctorAppTest.service;
 
-import com.example.gettingspringsecurity.entity.Patient;
+import com.example.doctorAppTest.entity.Patient;
 
 import java.util.List;
 
