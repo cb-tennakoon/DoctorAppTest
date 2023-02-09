@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<form th:action="@{test}" method="get">-->
+<!--    Filter: <input type="text" name="keyword" id="keyword" size="50" th:value="${keyword}" required />-->
+<!--    &nbsp;-->
+<!--    <input type="submit" value="Search" />-->
+<!--    &nbsp;-->
+<!--    <input type="button" value="Clear" id="btnClear" onclick="clearSearch()" />-->
+<!--</form>-->
+<!--<table class="table table-bordered table-sm mt-2">-->
+<!--    <thead>-->
+<!--    <tr>-->
+<!--        <th>Id</th>-->
+<!--        <th>Name</th>-->
+<!--&lt;!&ndash;        <th>Shop Type</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Shop Number</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Address</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Country</th>&ndash;&gt;-->
+<!--&lt;!&ndash;        <th>Action</th>&ndash;&gt;-->
+<!--    </tr>-->
+<!--    </thead>-->
+<!--    <tbody>-->
+<!--    <tr th:each="l : ${listPatient}" th:field="${l}">-->
+<!--        <td th:text="${l.name}"></td>-->
+<!--        <td th:text="${l.getName()}"></td>-->
+<!--&lt;!&ndash;        <td th:text="${l.shopType}"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td th:text="${l.shopNo}"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td th:text="${l.address}"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td th:text="${l.country}"></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>&ndash;&gt;-->
+<!--&lt;!&ndash;            <a th:href="@{/update/{id}(id=${l.id})}" ><i class="fa fa-edit" ></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;            <a th:href="@{/delete/{id}(id=${l.id})}" ><i class="fa fa-remove"></i></a>&ndash;&gt;-->
+<!--&lt;!&ndash;        </td>&ndash;&gt;-->
+<!--    </tr>-->
+<!--    </tbody>-->
+<!--</table>-->
+<!--<script type="text/javascript">-->
+<!--    function clearSearch() {-->
+<!--        window.location = "[[@{/}]]";-->
+<!--    }-->
+<!--</script>-->
+
+
+<h2>index test</h2>
+<form th:action="@{home}" method="get">
+    <input type="text" name="keyword" th:value="${keyword}"  placeholder="Find by Owner Name & Shop Type" size="50" >
+    <button type="submit" class="btn btn-info" >Search</button>
+    <button type="submit" class="btn btn-info" >Reset</button>
+</form>
+<table class="table table-bordered table-sm mt-2">
+    <thead>
+    <tr>
+        <th>Patient Name</th>
+        <th>Patient Age</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="l : ${listProducts}" th:field="${l}">
+        <td th:text="${l.name}"></td>
+        <td th:text="${l.age}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
